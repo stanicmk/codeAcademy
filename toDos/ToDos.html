@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>ToDos</title>
+    <link rel="stylesheet" href="../Zadaca 2/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="../Zadaca 2/bootstrap/js/bootstrap.js"></script>
+    <script src="../Zadaca 2/jquery/jquery.js"></script>
+
+
+    <style>
+        body {
+            background: #04A1BF;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .intro {
+            margin: 30px 0px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-top: 100px;
+            margin-bottom: 70px;
+        }
+
+
+        p {
+            font-weight: 600;
+        }
+
+        #help1 {
+            margin-top: 10px;
+            color: #FFCD5D;
+        }
+
+        #help2 {
+            color: #51DF70;
+
+        }
+
+        #help3 {
+            color: #025F70;
+            margin-bottom: 30px;
+        }
+
+
+        #enter {
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: #04A1BF;
+            background-color: #025F70;
+            transition: all 0.75s ease;
+            -webkit-transition: all 0.75s ease;
+            -moz-transition: all 0.75s ease;
+            -ms-transition: all 0.75s ease;
+            -o-transition: all 0.75 ease;
+            font-weight: normal;
+        }
+
+        #enter:hover {
+            background-color: #02798F;
+            color: #FFCD5D;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-transform: capitalize;
+            font-weight: 600;
+            border: 2px solid #025f70;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background: #4EB9CD;
+            transition: all 0.75s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5 ease;
+        }
+
+        li:hover {
+            background: #76CFE0;
+        }
+
+        li>button {
+            font-weight: normal;
+            background: none;
+            border: none;
+            float: right;
+            color: #025f70;
+            font-weight: 800;
+        }
+
+        input {
+            border-radius: 5px;
+            min-width: 65%;
+            padding: 5px;
+            border: none;
+            background-image: url('./text-left.svg');
+            background-repeat: no-repeat;
+            background-position: 680px 10px;
+
+        }
+
+
+        .delete {
+            display: none;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="intro col-12">
+                <h1>Work To-Dos</h1>
+                <div>
+                    <div class="row">
+                        <div class="help col-12">
+                            <p id="help1">Enter text into the input field to add items to your list.</p>
+                            <p id="help2">Click the item to mark it as complete.</p>
+                            <p id="help3">Click the "X" to remove the item from your list.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <input id="userInput" type="text" placeholder="New Item...">
+                        <button id="enter"><i class="bi bi-pencil"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="listItems col-12">
+                        <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../Zadaca 2/ToDos.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+</html>
